@@ -1,0 +1,25 @@
+
+
+
+<!-- Menu Part Start -->
+        <section class="container-fluid">
+            <div class="container navbar-nav n_menu">
+                
+            <?php 
+             wp_nav_menu(array(
+            'theme_location'=>'TM',
+            'menu_class'=>'navbar-nav menu_1'
+             ) );
+            ?>
+
+            </div>
+        </section>
+<!-- Menu Part End -->
+
+
+
+
+
+register_nav_menus(array(
+    'TM'=>'Primary',
+) );
